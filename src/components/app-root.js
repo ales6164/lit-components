@@ -14,7 +14,9 @@ class AppRoot extends LitElement {
         return html`
             <h1>lit-components</h1>
             <h2>lit-checkbox</h2>
-            <lit-checkbox class="lit-checkbox"></lit-checkbox>
+            <label>
+                <lit-checkbox class="lit-checkbox"></lit-checkbox> Checkbox
+            </label>
         `
     }
 
