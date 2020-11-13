@@ -1,0 +1,23 @@
+:root {
+  --theme-primary: #a7a7a7;
+  --theme-secondary: #0f7bd3;
+  --theme-on-primary: #ffffff;
+  --theme-background: #e0e0e0;
+  --theme-text-primary: rgba(0, 0, 0, .9);
+  --theme-text-secondary: rgba(0, 0, 0, .6);
+  --theme-surface: #fff;
+  --theme-icon: rgba(0, 0, 0, .54);
+  --theme-border-radius: 4px;
+}
+
+html, body {
+  margin: 0;
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@import "lit-checkbox";

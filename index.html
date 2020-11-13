@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>lit-components</title>
+    <meta name="description" content="material lit components">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<app-root class="app-layout" unresolved></app-root>
+<script>
+    window.process = {
+        env: {
+            NODE_ENV: 'production'
+        }
+    };
+</script>
+<script type="module" src="src/components/app-root.js"></script>
+<script>
+    if ('serviceWorker' in window.navigator) {
+        window.addEventListener('load', function () {
+            window.navigator.serviceWorker.register('service-worker.js', {scope: '/'});
+        });
+    }
+</script>
+</body>
+</html>

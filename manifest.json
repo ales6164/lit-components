@@ -1,0 +1,8 @@
+{
+  "name": "lit-components",
+  "short_name": "lit-components",
+  "start_url": "/",
+  "background_color": "#fff",
+  "display": "standalone",
+  "theme_color": "#fff"
+}
